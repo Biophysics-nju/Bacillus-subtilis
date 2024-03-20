@@ -12,7 +12,7 @@ def mkdir(path):
     is_exits = os.path.exists(path)
 
     if not is_exits:
-        os.makedirs(path)  # 不存在则创建该目录
+        os.makedirs(path)
         return path
     else:
         return path
