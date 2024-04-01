@@ -124,9 +124,6 @@ def main(steps, n):
         if n == 1:
             sc = s_input1(tc)
             fmiu = 1.8
-        elif n == 0.5:
-            sc = s_input1(tc)
-            fmiu = 2.5
         elif n == 3:
             sc = s_input3(tc)
             fmiu = 1.6
@@ -179,7 +176,7 @@ if __name__ == '__main__':
 
         for i in range(1000):
 
-            t, c = main(int(n*25000), n)
+            t, c = main(int(n*30000), n)
 
             np.savez(os.path.join(directory, 'simulation{}.npz'.format(i + 1)), t=t, c=c)
 
